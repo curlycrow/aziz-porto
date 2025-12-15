@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aziz — Portfolio</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Aziz</h1>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="avatar-wrap">
+          <a href="./avatar-full.svg" target="_blank" rel="noopener noreferrer">
+            <img class="avatar" src="./avatar.svg" alt="Aziz avatar (cartoon vector)" />
+            <div class="avatar-text">Aziz</div>
+          </a>
+        </div>
+        <div>
+          <p class="lead">A passionate developer building beautiful and useful web experiences.</p>
+          <p class="cta">
+            <a class="btn" href="#projects">View projects</a>
+            <a class="btn ghost" href="#contact">Contact me</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h3>About</h3>
+      <p>I build web apps with an emphasis on clean UI and good developer experience. This portfolio is a starter template — replace content with your own projects, links and images.</p>
+    </section>
+
+    <section id="projects" class="container projects">
+      <h3>Projects</h3>
+      <div class="grid">
+        <article class="card">
+          <h4>Project One</h4>
+          <p>Short description of project one.</p>
+          <p><a href="#">View repo</a></p>
+        </article>
+        <article class="card">
+          <h4>Project Two</h4>
+          <p>Short description of project two.</p>
+          <p><a href="#">View repo</a></p>
+        </article>
+        <article class="card">
+          <h4>Project Three</h4>
+          <p>Short description of project three.</p>
+          <p><a href="#">View repo</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h3>Contact</h3>
+      <p>Want to work together or ask a question? Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <p>Or find me on <a href="https://github.com/curlycrow" target="_blank" rel="noopener">GitHub</a>.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Aziz — Built with ❤️</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
