@@ -15,10 +15,10 @@ body{font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,"Helvetica Neue",
 .nav a{color:var(--muted);text-decoration:none;margin-left:1rem}
 .hero{padding:3rem 0}
 .hero-inner{display:flex;gap:2rem;align-items:center}
-.avatar{width:160px;height:160px;border-radius:12px;object-fit:cover;border:4px solid rgba(255,255,255,0.04)}
-.avatar-wrap{position:relative;display:inline-block}
+.avatar-wrap{position:relative;display:inline-block;width:140px;height:140px;border-radius:12px;overflow:hidden;border:4px solid rgba(255,255,255,0.04)}
+.avatar{width:100%;height:100%;object-fit:cover;display:block}
 .avatar-text{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);color:#fff;font-weight:700;padding:6px 10px;border-radius:8px;background:rgba(0,0,0,0.36);text-shadow:0 2px 6px rgba(0,0,0,0.6)}
-@media(max-width:720px){.avatar{width:120px;height:120px;border-radius:12px}}
+@media(max-width:720px){.avatar-wrap{width:100px;height:100px}}
 .lead{color:var(--muted);max-width:50ch}
 .btn{display:inline-block;padding:0.5rem 1rem;background:var(--accent);color:#022; border-radius:8px;text-decoration:none;margin-right:0.5rem}
 .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text)}
